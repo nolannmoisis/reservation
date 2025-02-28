@@ -13,12 +13,12 @@ function envoyerMail($destinataire, $sujet, $message) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'bluestackspotify@gmail.com';
-        $mail->Password = 'jsiw gzcr hueg yoky';
+        $mail->Username = 'YOURMAIL';
+        $mail->Password = 'YOURPASSWORD';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('bluestackspotify@gmail.com', 'GreenBooking');
+        $mail->setFrom('YOURMAIL', 'GreenBooking');
         $mail->addAddress($destinataire);
 
         $mail->isHTML(true);
